@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniela Saba Rosner — Data Portfolio</title>
+  <meta name="description" content="Portfolio of Daniela Saba Rosner — Business Intelligence, Data Analysis, Data Science" />
+
+  <style>
+    /* Reset minimal */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #e6eef8; background: #0f1720; }
+
+    /* Background banner */
+    .hero {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background-color: #0f1720;
+      background-image: url('/mnt/data/5d4876a5-a6fa-451d-b77b-448fb225d9da.png');
+      background-size: cover;
+      background-position: center;
+      filter: contrast(0.9) saturate(0.8);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(8,10,16,0.65), rgba(18,20,28,0.35));
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      width: min(1100px, 92%);
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      z-index: 2;
+    }
+
+    /* Photo */
+    .photo {
+      width: 140px;
+      height: 140px;
+      flex: 0 0 140px;
+      border-radius: 14px; /* rounded corners (square with rounded edges) */
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      border: 2px solid rgba(255,255,255,0.06);
+      background: #fff;
+    }
+    .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .hero-text {
+      flex: 1;
+      color: #f4f7fb;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.2px;
+    }
+
+    .roles {
+      display: inline-block;
+      background: rgba(240,235,255,0.9);
+      color: #0b1020;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      box-shadow: 0 6px 18px rgba(13,20,40,0.45);
+      margin-bottom: 14px;
+    }
+
+    .contact {
+      margin-top: 14px;
+      font-family: "Courier New", Courier, monospace;
+      opacity: 0.95;
+      color: #dbe7ff;
+      font-size: 15px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .contact a { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.06); padding-bottom: 2px; }
+
+    /* Main container */
+    .container {
+      width: min(1100px, 92%);
+      margin: 36px auto;
+    }
+
+    /* About */
+    .about {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding: 20px;
+      border-radius: 12px;
+      color: #cfe0ff;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+
+    .about h3 { font-size: 18px; margin-bottom: 8px; color: #e6f0ff; }
+    .about p { line-height: 1.5; color: #d4e7ff; }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.02);
+      padding: 16px;
+      border-radius: 12px;
+      min-height: 120px;
+      transition: transform .22s ease, box-shadow .22s ease;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(2,6,23,0.6); }
+
+    .card h4 { font-size: 16px; color: #fff; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: #c9ddff; opacity: 0.95; margin-bottom: 10px; line-height: 1.35; }
+    .card a {
+      display: inline-block;
+      margin-top: 6px;
+      font-weight: 700;
+      color: #0b1020;
+      background: #dcd0ff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    /* Footer */
+    footer {
+      margin: 36px auto 80px;
+      width: min(1100px, 92%);
+      color: #9fb6e8;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0.95;
+    }
+
+    /* small screens */
+    @media (max-width: 640px) {
+      .hero { height: 260px; }
+      .hero-inner { flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+      .photo { width: 118px; height: 118px; border-radius: 12px; }
+      .name { font-size: 24px; }
+      .roles { font-size: 14px; padding: 6px 12px; }
+    }
+
+    /* loader */
+    .loader {
+      display: inline-block;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.12);
+      border-top-color: rgba(255,255,255,0.75);
+      animation: spin 1s linear infinite;
+      vertical-align: middle;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <header class="hero" role="banner" aria-label="Hero header">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="photo" aria-hidden="false">
+        <!-- local photo path (replace with your repo path after uploading image there) -->
+        <img src="/mnt/data/0c55e8de-c955-48ad-86ec-0ff3a378bf3c.jpg" alt="Daniela Saba Rosner photo">
+      </div>
+
+      <div class="hero-text">
+        <div class="roles">Business Intelligence · Data Analysis · Data Science</div>
+        <div class="name">Daniela Saba Rosner</div>
+
+        <div class="contact" aria-label="contact links">
+          <a href="https://github.com/dsabarosner" target="_blank" rel="noopener">github.com/dsabarosner</a>
+          <a href="mailto:danielasabarosner@gmail.com">danielasabarosner@gmail.com</a>
+          <a href="https://www.linkedin.com/in/danielasabarosner/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="about" aria-labelledby="about-title">
+      <h3 id="about-title">About me</h3>
+      <p>
+        I'm a Business Intelligence analyst transitioning into Data Science. I build data-driven solutions, analyze large datasets,
+        and create reproducible machine learning models and dashboards to support decisions. Below are projects hosted in my GitHub repository.
+      </p>
+    </section>
+
+    <section aria-labelledby="projects-title">
+      <h3 id="projects-title" style="color:#cfe0ff; margin-bottom: 12px;">Featured Projects</h3>
+
+      <div id="projects" class="projects-grid" aria-live="polite">
+        <!-- Project cards will be injected here by JavaScript -->
+        <div style="grid-column: 1 / -1; color: #bcd3ff; font-size:14px;">
+          Loading projects from GitHub <span class="loader" role="status" aria-hidden="false"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built with ❤️ • Data & BI • <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">python_projects / DS</a>
+  </footer>
+
+  <script>
+    /* 
+      This script fetches contents of the DS folder from your public GitHub repo:
+      https://github.com/dsabarosner/python_projects/tree/main/DS
+      It then renders a card per item. If you rename or add projects in that folder,
+      this page will update automatically (after reload).
+    */
+    const projectsContainer = document.getElementById('projects');
+
+    async function loadProjects(){
+      try {
+        const apiUrl = 'https://api.github.com/repos/dsabarosner/python_projects/contents/DS';
+        const res = await fetch(apiUrl);
+        if(!res.ok) throw new Error('Could not fetch GitHub contents: ' + res.status);
+        const items = await res.json();
+
+        // Filter folders or files that likely represent projects
+        const projects = items.filter(it => it.type === 'dir' || it.name.toLowerCase().includes('project') || it.name.toLowerCase().includes('analysis') || it.name.toLowerCase().includes('eda') || it.name.toLowerCase().includes('notebook') || it.name.endsWith('.ipynb'));
+
+        // If nothing filtered, show everything (fallback)
+        const list = projects.length ? projects : items;
+
+        // Clear initial loader
+        projectsContainer.innerHTML = '';
+
+        list.forEach(item => {
+          const name = item.name.replace(/_/g, ' ');
+          const extLink = item.html_url || item.download_url || `https://github.com/dsabarosner/python_projects/tree/main/DS/${encodeURIComponent(item.name)}`;
+          const card = document.createElement('article');
+          card.className = 'card';
+          card.innerHTML = `
+            <h4>${escapeHtml(name)}</h4>
+            <p>${escapeHtml(guessDescription(item.name))}</p>
+            <a href="${extLink}" target="_blank" rel="noopener">View repository</a>
+          `;
+          projectsContainer.appendChild(card);
+        });
+
+      } catch (err) {
+        projectsContainer.innerHTML = '<div style="grid-column:1/-1; color:#ffcccc">Unable to load projects automatically. You can still edit the page and add project cards manually. ('+escapeHtml(err.message)+')</div>';
+        console.error(err);
+      }
+    }
+
+    function guessDescription(filename){
+      const lower = filename.toLowerCase();
+      if(lower.includes('megaline')) return 'Classification model: plan recommendation (Smart vs Ultra).';
+      if(lower.includes('rusty') || lower.includes('car') || lower.includes('vehicle')) return 'Regression models to predict car prices for a used-car marketplace.';
+      if(lower.includes('supermarket') || lower.includes('sales')) return 'EDA and dashboards to analyze sales trends and KPIs.';
+      if(lower.endsWith('.ipynb')) return 'Jupyter notebook with data exploration and models.';
+      return 'Project: click to view repository (edit this text to add a custom description).';
+    }
+
+    function escapeHtml(text){
+      return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    // Kick off
+    loadProjects();
+  </script>
+
+</body>
+</html>
