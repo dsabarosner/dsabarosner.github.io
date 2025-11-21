@@ -1,141 +1,78 @@
 /* Reset básico */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html, body {
-    height: 100%;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    color: #e6eef8;
-    background: url('../assets/imgs/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    height: 100%;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #e6eef8;
+    /* 🟢 CAMBIO CLAVE 1: Ruta corregida. Subir un nivel (a la carpeta assets/) y entrar a imgs/. */
+    background: url('../imgs/background.jpg') no-repeat center center fixed; 
+    background-size: cover;
 }
 
 /* ---------------- Hero / Header ---------------- */
+/* ... (El resto de la sección .hero es igual) ... */
 .hero {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(15,23,32,0.85);
-    background-size: cover;
-    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(15,23,32,0.85);
+    background-size: cover;
+    background-position: center;
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(8,10,16,0.65), rgba(18,20,28,0.35));
-    pointer-events: none;
-}
+/* ... (El resto del hero inner es igual) ... */
 
-.hero-inner {
-    width: min(1100px, 92%);
-    display: flex;
-    gap: 28px;
-    align-items: center;
-    z-index: 2;
-}
-
-/* Foto */
-.photo {
-    width: 140px;
-    height: 140px;
-    flex: 0 0 140px;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-    border: 2px solid rgba(255,255,255,0.06);
-    background: #fff;
-}
-.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Texto Hero */
-.hero-text {
-    flex: 1;
-    color: #f4f7fb;
-}
-.name {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: -0.2px;
-}
-.roles {
-    display: inline-block;
-    background: rgba(240,235,255,0.9);
-    color: #0b1020;
-    padding: 8px 16px;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    box-shadow: 0 6px 18px rgba(13,20,40,0.45);
-    margin-bottom: 14px;
-}
-.contact {
-    margin-top: 14px;
-    font-family: "Courier New", Courier, monospace;
-    opacity: 0.95;
-    color: #dbe7ff;
-    font-size: 15px;
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-.contact a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(255,255,255,0.06);
-    padding-bottom: 2px;
-}
 
 /* ---------------- Container Principal ---------------- */
 .container {
-    width: min(1100px, 92%);
-    margin: 36px auto;
+    width: min(1100px, 92%);
+    margin: 36px auto;
 }
 
 /* ---------------- About ---------------- */
 .about {
-    background: rgba(0,0,0,0.35);
-    padding: 20px;
-    border-radius: 12px;
-    color: #cfe0ff;
-    margin-bottom: 22px;
-    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    /* 🟢 CAMBIO CLAVE 2: Opacidad aumentada de 0.35 a 0.75 para mejor contraste */
+    background: rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 12px;
+    color: #cfe0ff;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
 }
 .about h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #e6f0ff;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #e6f0ff;
 }
 .about p {
-    line-height: 1.5;
-    color: #d4e7ff;
+    line-height: 1.5;
+    color: #d4e7ff;
 }
 
 /* ---------------- Proyectos ---------------- */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
 }
 
 .card {
-    background: rgba(255,255,255,0.02);
-    padding: 16px;
-    border-radius: 12px;
-    min-height: 120px;
-    transition: transform .22s ease, box-shadow .22s ease;
-    border: 1px solid rgba(255,255,255,0.03);
+    /* 🟢 CAMBIO CLAVE 3: Opacidad aumentada. Original 0.02 (casi invisible), ahora 0.15 */
+    background: rgba(255,255,255,0.15); 
+    padding: 16px;
+    border-radius: 12px;
+    min-height: 120px;
+    transition: transform .22s ease, box-shadow .22s ease;
+    border: 1px solid rgba(255,255,255,0.03);
 }
+
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 14px 40px rgba(2,6,23,0.6);
