@@ -3,71 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instacart — Data Wrangling & EDA</title>
+    <title>Instacart Data Wrangling — Daniela Saba Rosner</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
-
 <body>
 
-    <!-- Back Button -->
-    <a href="../index.html" class="back-button">← Back to Home</a>
-
-    <header class="project-header">
-        <h1>Instacart — Data Wrangling & Exploratory Data Analysis</h1>
-        <p>Data wrangling, cleaning, and visualization to understand customer ordering patterns.</p>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <div class="photo">
+                <img src="../assets/imgs/profile-photo.jpg" alt="Daniela Saba Rosner">
+            </div>
+            <div class="hero-text">
+                <div class="roles">Business Intelligence · Data Analysis · Data Science</div>
+                <div class="name">Daniela Saba Rosner</div>
+            </div>
+        </div>
     </header>
 
-    <main class="project-container">
+    <main class="container project-container">
+
+        <a href="../index.html" class="back-button">← Back to Home</a>
+
+        <div class="project-header">
+            <h1>Instacart Data Wrangling</h1>
+            <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
+        </div>
+
         <section>
             <h2>Project Overview</h2>
-            <p>
-                This project analyzes Instacart customer orders to identify patterns in purchasing behavior,
-                frequency of orders, time-based patterns, and product distribution.  
-                The analysis includes data cleaning, feature engineering, aggregation,
-                and exploratory data visualization.
-            </p>
+            <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
+            <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
+            <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
         </section>
 
         <section>
             <h2>Exploratory Data Analysis</h2>
-
             <ul class="img-list">
-                <li>
-                    <strong>Orders per hour of the day</strong><br>
-                    <img src="../assets/imgs/instacart1.png" alt="Orders per hour">
-                </li>
-
-                <li>
-                    <strong>Orders by day of the week</strong><br>
-                    <img src="../assets/imgs/instacart2.png" alt="Orders by day">
-                </li>
-
-                <li>
-                    <strong>Time until next order</strong><br>
-                    <img src="../assets/imgs/instacart3.png" alt="Time until next order">
-                </li>
-
-                <li>
-                    <strong>Difference between Wednesday and Saturday</strong><br>
-                    <img src="../assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday">
-                </li>
-
-                <li>
-                    <strong>Distribution of items per order</strong><br>
-                    <img src="../assets/imgs/instacart5.png" alt="Distribution of items per order">
-                </li>
+                <li>Orders per hour of the day <br><img src="../assets/imgs/instacart1.png" alt="Orders per hour"></li>
+                <li>Orders by day of the week <br><img src="../assets/imgs/instacart2.png" alt="Orders by day"></li>
+                <li>Time until next order <br><img src="../assets/imgs/instacart3.png" alt="Time until next order"></li>
+                <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <br><img src="../assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
+                <li>Distribution of items per order <br><img src="../assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
             </ul>
         </section>
 
         <section>
-            <h2>Repository</h2>
-            <p>You can view the full notebook, code and dataset here:</p>
-            <a href="https://github.com/dsabarosner/python_projects/tree/main/DS/Instacart" class="repo-link" target="_blank">
-                View Instacart Repository →
-            </a>
+            <h2>Conclusion</h2>
+            <ul>
+                <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
+                <li>Banana is the most frequently ordered and repeated product.</li>
+                <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
+                <li>Data preprocessing ensured high-quality data for subsequent analysis.</li>
+            </ul>
         </section>
 
     </main>
+
+    <footer>
+        Built with ❤️ • Data & BI • <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">python_projects / DS</a>
+    </footer>
 
 </body>
 </html>
