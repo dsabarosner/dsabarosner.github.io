@@ -1,70 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instacart Data Wrangling</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Instacart Data Wrangling — Daniela Saba Rosner</title>
+    <meta name="description" content="Instacart project: data preprocessing, EDA, and insights.">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Instacart Data Wrangling</h1>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <div class="photo">
+                <img src="../assets/imgs/profile.jpg" alt="Daniela Saba Rosner">
+            </div>
+            <div class="hero-text">
+                <div class="roles">Business Intelligence · Data Analysis · Data Science</div>
+                <div class="name">Daniela Saba Rosner</div>
+                <div class="contact">
+                    <a href="https://github.com/dsabarosner" target="_blank" rel="noopener">github.com/dsabarosner</a>
+                    <a href="mailto:danielasabarosner@gmail.com">danielasabarosner@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/danielasabarosner/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Description</h2>
-        <p>Instacart is a grocery delivery platform where customers can place orders and have them delivered. The project aims to identify patterns in user purchase behavior and trends in selected products.</p>
-    </section>
+    <main class="container">
+        <section class="about">
+            <h3>Project: Instacart Data Wrangling</h3>
+            <p>
+                Instacart is a grocery delivery platform where customers can place an order and have it delivered.
+            </p>
 
-    <section>
-        <h2>Problem</h2>
-        <p>The goal is to understand patterns in user purchasing behavior and trends in product selection.</p>
-    </section>
+            <h4>The Problem</h4>
+            <p>
+                The goal is to understand patterns in user shopping behavior and trends in product selection.
+            </p>
 
-    <section>
-        <h2>Solution / Data Preprocessing</h2>
-        <ul>
-            <li>Check and correct data types</li>
-            <li>Identify and handle missing values</li>
-            <li>Identify and remove duplicate entries</li>
-        </ul>
-    </section>
+            <h4>Solution</h4>
+            <p>
+                Data preprocessing steps included:
+                <ul>
+                    <li>Checking and correcting data types.</li>
+                    <li>Identifying and handling missing values.</li>
+                    <li>Detecting and removing duplicates.</li>
+                </ul>
+            </p>
 
-    <section>
-        <h2>Technologies & Tools</h2>
-        <ul>
-            <li>Python (pandas)</li>
-            <li>Jupyter Notebook</li>
-            <li>VS Code</li>
-        </ul>
-    </section>
+            <h4>Technologies & Tools</h4>
+            <p>
+                <ul>
+                    <li>Python (pandas)</li>
+                    <li>Jupyter Notebook</li>
+                    <li>VS Code</li>
+                </ul>
+            </p>
 
-    <section>
-        <h2>Exploratory Data Analysis</h2>
-        <ul>
-            <li>Orders per hour of the day <img src="../assets/imgs/instacart1.png" alt="Orders per hour"></li>
-            <li>Orders by day of the week <img src="../assets/imgs/instacart2.png" alt="Orders by day"></li>
-            <li>Time until next order <img src="../assets/imgs/instacart3.png" alt="Time until next order"></li>
-            <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <img src="../assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
-            <li>Distribution of items per order <img src="../assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
-        </ul>
-    </section>
+            <section>
+                <h2>Exploratory Data Analysis</h2>
+                <ul>
+                    <li>Orders per hour of the day <br><img src="../assets/imgs/instacart1.png" alt="Orders per hour"></li>
+                    <li>Orders by day of the week <br><img src="../assets/imgs/instacart2.png" alt="Orders by day"></li>
+                    <li>Time until next order <br><img src="../assets/imgs/instacart3.png" alt="Time until next order"></li>
+                    <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <br><img src="../assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
+                    <li>Distribution of items per order <br><img src="../assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
+                </ul>
+            </section>
 
-    <section>
-        <h2>General Conclusions</h2>
-        <ul>
-            <li>Identified peak purchase hours at 9 a.m., and peak days being Sunday and Monday. Average waiting time for the next order is 30 days.</li>
-            <li>Bananas are the most frequently ordered and repeated product, often the first selected in carts.</li>
-            <li>Average product re-order rate is above 50%, useful for customer and product segmentation in promotions.</li>
-            <li>Data preprocessing was essential to ensure data quality and enable further analysis.</li>
-        </ul>
-    </section>
+            <h4>Conclusion</h4>
+            <ul>
+                <li>Peak order time is at 9 a.m., and Sunday/Monday are the busiest shopping days.</li>
+                <li>On average, users wait 30 days before placing another order.</li>
+                <li>Bananas are the most ordered and frequently repeated product.</li>
+                <li>Repeat purchase rate is above 50%, which helps segment customers and prioritize product promotions.</li>
+                <li>Data preprocessing ensured high-quality data for further analysis.</li>
+            </ul>
 
-    <section>
-        <h2>Repository</h2>
-        <p><a href="https://github.com/dsabarosner/python_projects/tree/main/DS/Data_wranglind_2" target="_blank">View project on GitHub →</a></p>
-    </section>
+            <p>
+                <a href="https://github.com/dsabarosner/python_projects/tree/main/DS/Data_wranglind_2" target="_blank" rel="noopener">
+                    View full repository
+                </a>
+            </p>
+        </section>
+    </main>
 
-    <p><a href="../index.html">← Back to Portfolio</a></p>
+    <footer>
+        Built with ❤️ • Data & BI • 
+        <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">
+            python_projects / DS
+        </a>
+    </footer>
 </body>
 </html>
