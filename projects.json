@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Instacart Data Wrangling",
+    "description": "Data cleaning, preprocessing and exploratory analysis of grocery purchase behavior using Instacart's dataset.",
+    "image": "assets/imgs/instacart.png",
+    "page": "projects/Instacart_data_wrangling.html",
+    "github": "https://github.com/dsabarosner/python_projects/tree/main/DS/Data_wranglind_2"
+  }
+]
