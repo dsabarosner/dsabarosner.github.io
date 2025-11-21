@@ -1,47 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniela Saba Rosner - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniela Saba Rosner — Data Portfolio</title>
+  <meta name="description" content="Portfolio of Daniela Saba Rosner — Business Intelligence, Data Analysis, Data Science" />
+
+  <style>
+    /* Keep all your previous styles from the hero, about, projects grid, card, footer */
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Daniela Saba Rosner</h1>
-        <h3>Business Intelligence • Data Analysis • Data Science</h3>
-    </header>
 
-    <section id="about" class="about">
-        <p>I'm a Business Intelligence analyst transitioning into Data Science. I build data-driven solutions, analyze large datasets,
-        and create reproducible machine learning models and dashboards to support decisions. Below are projects hosted in my GitHub repository.</p>
+  <header class="hero" role="banner" aria-label="Hero header">
+    <!-- Hero content unchanged -->
+  </header>
+
+  <main class="container" role="main">
+    <section class="about" aria-labelledby="about-title">
+      <h3 id="about-title">About me</h3>
+      <p>I'm a Business Intelligence analyst transitioning into Data Science. I build data-driven solutions, analyze large datasets, and create reproducible machine learning models and dashboards to support decisions. Below are projects hosted in my GitHub repository.</p>
     </section>
 
-    <section id="projects" class="grid"></section>
+    <section aria-labelledby="projects-title">
+      <h3 id="projects-title" style="color:#cfe0ff; margin-bottom: 12px;">Featured Projects</h3>
 
-    <script>
-        fetch("projects.json")
-            .then(response => response.json())
-            .then(projects => {
-                const container = document.getElementById("projects");
+      <div id="projects" class="projects-grid" aria-live="polite">
+        <div style="grid-column: 1 / -1; color: #bcd3ff; font-size:14px;">Loading projects <span class="loader" role="status" aria-hidden="false"></span></div>
+      </div>
+    </section>
+  </main>
 
-                projects.forEach(p => {
-                    container.innerHTML += `
-                        <div class="card">
-                            <img src="${p.image}" alt="${p.title}">
-                            <h2>${p.title}</h2>
-                            <p>${p.description}</p>
-                            <div class="buttons">
-                                <a class="btn" href="${p.page}">View Project</a>
-                                <a class="btn-outline" href="${p.github}" target="_blank">Repository</a>
-                            </div>
-                        </div>
-                    `;
-                });
-            });
-    </script>
   <footer>
     Built with ❤️ • Data & BI • <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">python_projects / DS</a>
   </footer>
+
+  <script>
+    const projectsContainer = document.getElementById('projects');
+
+    const projectsList = [
+      {"title":"Instacart Data Wrangling", "page":"projects/Instacart_data_wrangling.html"},
+      {"title":"Megaline Classification Model", "page":"projects/megaline.html"},
+      {"title":"Rusty Bargain Car Pricing", "page":"projects/rusty_bargain.html"}
+    ];
+
+    projectsContainer.innerHTML = '';
+    projectsList.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <h4>${p.title}</h4>
+        <p>Click below to view project details.</p>
+        <a href="${p.page}">View Project</a>
+      `;
+      projectsContainer.appendChild(card);
+    });
+  </script>
+
 </body>
 </html>
