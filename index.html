@@ -1,61 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniela Saba Rosner — Data Portfolio</title>
-  <meta name="description" content="Portfolio of Daniela Saba Rosner — Business Intelligence, Data Analysis, Data Science" />
+  <meta name="description" content="Portfolio of Daniela Saba Rosner — Business Intelligence, Data Analysis, Data Science">
 
-  <style>
-    /* Keep all your previous styles from the hero, about, projects grid, card, footer */
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
-<body>
 
-  <header class="hero" role="banner" aria-label="Hero header">
-    <!-- Hero content unchanged -->
+<body>
+  <!-- -------------------- HEADER / HERO -------------------- -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="photo">
+        <img src="assets/imgs/profile.jpg" alt="Daniela Saba Rosner">
+      </div>
+      <div class="hero-text">
+        <div class="roles">Business Intelligence · Data Analysis · Data Science</div>
+        <div class="name">Daniela Saba Rosner</div>
+        <div class="contact">
+          <a href="https://github.com/dsabarosner" target="_blank" rel="noopener">github.com/dsabarosner</a>
+          <a href="mailto:danielasabarosner@gmail.com">danielasabarosner@gmail.com</a>
+          <a href="https://www.linkedin.com/in/danielasabarosner/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main class="container" role="main">
-    <section class="about" aria-labelledby="about-title">
-      <h3 id="about-title">About me</h3>
-      <p>I'm a Business Intelligence analyst transitioning into Data Science. I build data-driven solutions, analyze large datasets, and create reproducible machine learning models and dashboards to support decisions. Below are projects hosted in my GitHub repository.</p>
+  <main class="container">
+    <!-- -------------------- ABOUT ME -------------------- -->
+    <section class="about" id="about">
+      <h3>About me</h3>
+      <p>
+        I'm a Business Intelligence analyst transitioning into Data Science. I build data-driven solutions, analyze large datasets,
+        and create reproducible machine learning models and dashboards to support decisions. Below are projects hosted in my GitHub repository.
+      </p>
     </section>
 
-    <section aria-labelledby="projects-title">
-      <h3 id="projects-title" style="color:#cfe0ff; margin-bottom: 12px;">Featured Projects</h3>
+    <!-- -------------------- PROJECTS -------------------- -->
+    <section id="projects">
+      <h3>Featured Projects</h3>
+      <div class="projects-grid">
+        <!-- Ejemplo de tarjeta de proyecto -->
+        <div class="card">
+          <h4>Instacart Data Wrangling</h4>
+          <p>
+            Data preprocessing and exploratory analysis of user shopping patterns on Instacart. Identified peak order times, repeat purchase rates, and product trends.
+          </p>
+          <a href="projects/Instacart_data_wrangling.html" target="_blank" rel="noopener">View project</a>
+        </div>
 
-      <div id="projects" class="projects-grid" aria-live="polite">
-        <div style="grid-column: 1 / -1; color: #bcd3ff; font-size:14px;">Loading projects <span class="loader" role="status" aria-hidden="false"></span></div>
+        <div class="card">
+          <h4>Megaline Plan Recommendation</h4>
+          <p>
+            Classification model predicting whether customers should choose Smart or Ultra plan based on usage data.
+          </p>
+          <a href="projects/Megaline_plan_recommendation.html" target="_blank" rel="noopener">View project</a>
+        </div>
+
+        <div class="card">
+          <h4>Rusty Bargain Car Price Prediction</h4>
+          <p>
+            Regression models (Linear, Random Forest, XGBoost, CatBoost) to predict used car prices and analyze model performance.
+          </p>
+          <a href="projects/RustyBargain_price_prediction.html" target="_blank" rel="noopener">View project</a>
+        </div>
+
+        <div class="card">
+          <h4>Supermarket Sales EDA</h4>
+          <p>
+            Exploratory data analysis of supermarket sales, KPIs and visualization dashboards for business insights.
+          </p>
+          <a href="projects/Supermarket_sales_EDA.html" target="_blank" rel="noopener">View project</a>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- -------------------- FOOTER -------------------- -->
   <footer>
-    Built with ❤️ • Data & BI • <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">python_projects / DS</a>
+    Built with ❤️ • Data & BI • 
+    <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">
+      python_projects / DS
+    </a>
   </footer>
-
-  <script>
-    const projectsContainer = document.getElementById('projects');
-
-    const projectsList = [
-      {"title":"Instacart Data Wrangling", "page":"projects/Instacart_data_wrangling.html"},
-      {"title":"Megaline Classification Model", "page":"projects/megaline.html"},
-      {"title":"Rusty Bargain Car Pricing", "page":"projects/rusty_bargain.html"}
-    ];
-
-    projectsContainer.innerHTML = '';
-    projectsList.forEach(p => {
-      const card = document.createElement('article');
-      card.className = 'card';
-      card.innerHTML = `
-        <h4>${p.title}</h4>
-        <p>Click below to view project details.</p>
-        <a href="${p.page}">View Project</a>
-      `;
-      projectsContainer.appendChild(card);
-    });
-  </script>
-
 </body>
 </html>
