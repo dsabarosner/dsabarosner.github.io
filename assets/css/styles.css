@@ -13,11 +13,17 @@ html, body {
 
 /* -------------------- Fondo global -------------------- */
 body {
-  background-image: url('assets/imgs/background.jpg'); /* Reemplaza con tu imagen */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #e6eef8;
+    margin: 0;
+    padding: 0;
+
+    /* Imagen de fondo */
+    background-image: url('../imgs/background.jpg'); /* ruta relativa desde assets/css/ */
+    background-size: cover;        /* cubre todo el contenedor */
+    background-position: center;   /* centra la imagen */
+    background-repeat: no-repeat;  /* no se repita */
+    background-attachment: fixed;  /* se queda fija al hacer scroll */
 }
 
 /* -------------------- Contenedores -------------------- */
