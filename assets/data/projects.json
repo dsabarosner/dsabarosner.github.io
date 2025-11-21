@@ -1,0 +1,29 @@
+[
+  {
+    "id": "instacart",
+    "title": "Instacart Data Wrangling",
+    "summary": "Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.",
+    "repo": "https://github.com/dsabarosner/Instacart_data_wrangling",
+    "images": [
+      "../assets/imgs/instacart1.png",
+      "../assets/imgs/instacart2.png",
+      "../assets/imgs/instacart3.png",
+      "../assets/imgs/instacart4.png",
+      "../assets/imgs/instacart5.png"
+    ],
+    "sections": [
+      {
+        "title": "Project Overview",
+        "content": "<p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p><p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p><p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>"
+      },
+      {
+        "title": "Exploratory Data Analysis",
+        "content": "<ul><li>Orders per hour of the day <br><img src='../assets/imgs/instacart1.png'></li><li>Orders by day of the week <br><img src='../assets/imgs/instacart2.png'></li><li>Time until next order <br><img src='../assets/imgs/instacart3.png'></li><li>Difference between Wednesday and Saturday <br><img src='../assets/imgs/instacart4.png'></li><li>Distribution of items per order <br><img src='../assets/imgs/instacart5.png'></li></ul>"
+      },
+      {
+        "title": "Conclusion",
+        "content": "<ul><li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li><li>Banana is the most frequently ordered and repeated product.</li><li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li><li>Data preprocessing ensured high-quality data for subsequent analysis.</li></ul>"
+      }
+    ]
+  }
+]
