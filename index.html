@@ -1,93 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniela Saba Rosner — Data Portfolio</title>
-  <meta name="description" content="Portfolio of Daniela Saba Rosner — Business Intelligence, Data Analysis, Data Science">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Daniela Saba Rosner</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
-  <!-- -------------------- HEADER / HERO -------------------- -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-inner">
-      <div class="photo">
-        <img src="assets/imgs/profile.png" alt="Daniela Saba Rosner">
-      </div>
-      <div class="hero-text">
-        <div class="roles">Business Intelligence · Data Analysis · Data Science</div>
-        <div class="name">Daniela Saba Rosner</div>
-        <div class="contact">
-          <a href="https://github.com/dsabarosner" target="_blank" rel="noopener">github.com/dsabarosner</a>
-          <a href="mailto:danielasabarosner@gmail.com">danielasabarosner@gmail.com</a>
-          <a href="https://www.linkedin.com/in/danielasabarosner/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-    </div>
+  <header class="navbar">
+    <div class="logo">DSR</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <!-- -------------------- ABOUT ME -------------------- -->
-    <section class="about" id="about">
-      <h3>About me</h3>
-      <p>
-        I'm a Business Intelligence analyst transitioning into Data Science. I build data-driven solutions, analyze large datasets,
-        and create reproducible machine learning models and dashboards to support decisions. Below are projects hosted in my GitHub repository.
-      </p>
-    </section>
+  <section id="home" class="hero">
+    <canvas id="nodes-bg"></canvas>
+    <div class="hero-content">
+      <h1>Daniela Saba Rosner</h1>
+      <h2>Business Intelligence · Data Analysis · Data Science</h2>
+      <a href="#projects" class="btn-primary">Ver proyectos</a>
+    </div>
+  </section>
 
-    <!-- -------------------- PROJECTS -------------------- -->
-    <section id="projects">
-      <h3>Featured Projects</h3>
-      <div class="projects-grid">
-        <!-- Ejemplo de tarjeta de proyecto -->
-        <div class="card">
-          <h4>Instacart Data Wrangling</h4>
-          <p>
-            Data preprocessing and exploratory analysis of user shopping patterns on Instacart. Identified peak order times, repeat purchase rates, and product trends.
-          </p>
-          <a href="projects/Instacart_data_wrangling.html" target="_blank" rel="noopener">View project</a>
-        </div>
-
-        <div class="card">
-          <h4>Megaline Plan Recommendation</h4>
-          <p>
-            Classification model predicting whether customers should choose Smart or Ultra plan based on usage data.
-          </p>
-          <a href="projects/Megaline_plan_recommendation.html" target="_blank" rel="noopener">View project</a>
-        </div>
-
-        <div class="card">
-          <h4>Rusty Bargain Car Price Prediction</h4>
-          <p>
-            Regression models (Linear, Random Forest, XGBoost, CatBoost) to predict used car prices and analyze model performance.
-          </p>
-          <a href="projects/RustyBargain_price_prediction.html" target="_blank" rel="noopener">View project</a>
-        </div>
-
-        <div class="card">
-          <h4>Supermarket Sales EDA</h4>
-          <p>
-            Exploratory data analysis of supermarket sales, KPIs and visualization dashboards for business insights.
-          </p>
-          <a href="projects/Supermarket_sales_EDA.html" target="_blank" rel="noopener">View project</a>
-        </div>
+  <section id="about" class="about">
+    <div class="about-wrapper">
+      <img src="assets/imgs/profile.png" alt="Profile" class="profile-img" />
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p>Analista de datos y Business Intelligence con experiencia en modelos predictivos, visualización de datos y análisis financiero. Combino habilidades técnicas en Python, SQL y machine learning con un enfoque estratégico orientado al negocio.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- -------------------- FOOTER -------------------- -->
-  <footer>
-    Built with ❤️ • Data & BI • 
-    <a href="https://github.com/dsabarosner/python_projects" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">
-      python_projects / DS
-    </a>
-  </footer>
+  <section id="projects" class="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Megaline</h3>
+        <p>Modelo de clasificación para recomendar plan telefónico.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">Ver repositorio</a>
+      </div>
+      <div class="card">
+        <h3>Rusty Bargain</h3>
+        <p>Predicción del precio de vehículos usados usando múltiples modelos.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">Ver repositorio</a>
+      </div>
+      <div class="card">
+        <h3>Default Predictor</h3>
+        <p>Modelo de riesgo financiero para predecir probabilidad de default.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">Ver repositorio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Conéctate conmigo en mis redes profesionales:</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com/dsabarosner" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">© 2025 Daniela Saba Rosner</footer>
+
+  <script src="assets/js/nodes.js"></script>
 </body>
 </html>
