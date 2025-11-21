@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     color: #e6eef8;
-    background: url('../assets/imgs/portfolio-background.jpg') no-repeat center center fixed;
+    background: url('../assets/imgs/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
