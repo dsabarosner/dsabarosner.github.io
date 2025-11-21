@@ -9,7 +9,8 @@
 </head>
 <body>
 
-<!-- -------------------- HERO / HEADER -------------------- -->
+<canvas id="nodes-bg"></canvas> <!-- Fondo dinámico de nodos -->
+
 <header class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-inner">
@@ -30,7 +31,6 @@
 
 <main class="container">
 
-  <!-- -------------------- ABOUT ME -------------------- -->
   <section class="about" id="about">
     <h3>About Me</h3>
     <p>
@@ -39,7 +39,6 @@
     </p>
   </section>
 
-  <!-- -------------------- PROJECTS -------------------- -->
   <section id="projects">
     <h3>Featured Projects</h3>
     <div class="projects-grid">
@@ -47,31 +46,34 @@
       <div class="card">
         <h4>Instacart Data Wrangling</h4>
         <p>Data preprocessing and exploratory analysis of Instacart user orders.</p>
-        <a href="project.html?id=instacart">View Project</a>
+        <a href="projects/Instacart_data_wrangling.html" target="_blank" rel="noopener">View Summary</a>
+        <a href="https://github.com/dsabarosner/Instacart_project" target="_blank" rel="noopener">GitHub Repo</a>
       </div>
 
       <div class="card">
         <h4>Megaline Plan Recommendation</h4>
         <p>Classification model predicting Smart or Ultra plan for customers based on usage data.</p>
-        <a href="project.html?id=megaline">View Project</a>
+        <a href="projects/Megaline_plan_recommendation.html" target="_blank" rel="noopener">View Summary</a>
+        <a href="https://github.com/dsabarosner/Megaline_project" target="_blank" rel="noopener">GitHub Repo</a>
       </div>
 
       <div class="card">
         <h4>Rusty Bargain Car Price Prediction</h4>
         <p>Regression models (Linear, Random Forest, XGBoost, CatBoost) to predict used car prices.</p>
-        <a href="project.html?id=rustybargain">View Project</a>
+        <a href="projects/RustyBargain_price_prediction.html" target="_blank" rel="noopener">View Summary</a>
+        <a href="https://github.com/dsabarosner/RustyBargain_project" target="_blank" rel="noopener">GitHub Repo</a>
       </div>
 
       <div class="card">
         <h4>Supermarket Sales EDA</h4>
         <p>Exploratory data analysis and dashboards for supermarket sales insights.</p>
-        <a href="project.html?id=supermarket">View Project</a>
+        <a href="projects/Supermarket_sales_EDA.html" target="_blank" rel="noopener">View Summary</a>
+        <a href="https://github.com/dsabarosner/Supermarket_EDA" target="_blank" rel="noopener">GitHub Repo</a>
       </div>
 
     </div>
   </section>
 
-  <!-- -------------------- CONTACT -------------------- -->
   <section id="contact">
     <h3>Contact Me</h3>
     <p>If you would like to get in touch, feel free to reach out via GitHub, LinkedIn, or email.</p>
@@ -84,8 +86,9 @@
 
 </main>
 
-<!-- -------------------- FOOTER -------------------- -->
 <footer class="footer">© 2025 Daniela Saba Rosner</footer>
+
+<script src="assets/js/nodes.js"></script> <!-- Animación de nodos -->
 
 </body>
 </html>
