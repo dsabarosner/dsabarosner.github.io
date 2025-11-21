@@ -19,7 +19,7 @@ body {
     padding: 0;
 
     /* Imagen de fondo */
-    background-image: url('../imgs/background.jpg'); /* ruta relativa desde assets/css/ */
+    background-image: url('assets/imgs/background.jpg');/* ruta relativa desde assets/css/ */
     background-size: cover;        /* cubre todo el contenedor */
     background-position: center;   /* centra la imagen */
     background-repeat: no-repeat;  /* no se repita */
