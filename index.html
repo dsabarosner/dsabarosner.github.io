@@ -68,6 +68,19 @@
         <button class="btn-secondary open-modal" data-modal="modal-default">View Summary</button>
       </div>
 
+      <!-- ICE Project Card -->
+      <div class="card">
+        <h3>ICE Video Game Sales Analysis</h3>
+        <p>Full exploratory analysis of video game sales to identify market trends and success factors.</p>
+      
+        <a href="https://github.com/dsabarosner/python_projects/tree/main/DS/ICE"
+           target="_blank"
+           class="btn-secondary">View Repository</a>
+      
+        <button class="btn-secondary open-modal" data-modal="modal-ice">View Summary</button>
+      </div>
+
+
       <!-- Instacart Card -->
       <div class="card">
         <h3>Instacart Data Wrangling</h3>
@@ -200,6 +213,74 @@
       </ul>
     </div>
   </div>
+
+  <!-- ICE Modal -->
+<div id="modal-ice" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h1>ICE — Video Game Sales Analysis</h1>
+    <p>
+      Complete exploratory analysis of a real dataset containing video game sales.
+      The goal is to identify patterns, regional differences, and success factors
+      that can guide commercial and advertising strategies for the upcoming year.
+    </p>
+
+    <h2>Project Overview</h2>
+    <p><strong>Technologies & Tools:</strong>
+      Python (pandas, numpy, scipy, matplotlib, seaborn, math),
+      Jupyter Notebook, VS Code
+    </p>
+
+    <p><strong>Actions Performed:</strong></p>
+    <ul>
+      <li>Prepared and cleaned the dataset, converting data types when required.</li>
+      <li>Handled missing values by imputing or removing them based on impact.</li>
+      <li>Created additional features such as total sales.</li>
+      <li>Performed deep exploratory analysis:
+        platform lifecycle, global sales, genre distribution, critic/user scores, etc.
+      </li>
+      <li>Conducted regional analysis (NA, EU, JP, other regions).</li>
+      <li>Performed hypothesis testing:
+        <ul>
+          <li>User ratings for Xbox One and PC are the same.</li>
+          <li>User ratings for Action and Sports genres are different.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Exploratory Data Analysis</h2>
+    <ul class="img-list">
+      <li>Games released per year<br>
+        <img src="assets/imgs/ice1.png" alt="Games per year">
+      </li>
+      <li>Sales by platform<br>
+        <img src="assets/imgs/ice2.png" alt="Sales by platform">
+      </li>
+      <li>Yearly video game sales<br>
+        <img src="assets/imgs/ice3.png" alt="Yearly sales">
+      </li>
+      <li>Distribution of global sales by platform<br>
+        <img src="assets/imgs/ice4.png" alt="Global platform sales">
+      </li>
+      <li>Sales distribution by genre<br>
+        <img src="assets/imgs/ice5.png" alt="Genre sales distribution">
+      </li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <ul>
+      <li>The video game market shows strong volatility and dynamism in recent years.</li>
+      <li>Although average platform sales are similar, outliers from highly popular games create large differences.</li>
+      <li>Platform maturity varies drastically, making it difficult to apply uniform commercial strategies.</li>
+      <li>Strategies must focus on platforms with strong sales in recent years, since formerly dominant ones are declining rapidly.</li>
+      <li>Regional trends differ significantly — especially between Japan and Western markets (EU/NA).</li>
+      <li>ESRB ratings have limited impact on sales overall but remain relevant for broad-audience titles.</li>
+    </ul>
+
+  </div>
+</div>
+
 
   <!-- Instacart Modal -->
   <div id="modal-instacart" class="modal">
