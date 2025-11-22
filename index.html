@@ -96,6 +96,19 @@
         <button class="btn-secondary open-modal" data-modal="modal-instacart">View Summary</button>
       </div>
 
+      <!-- ML Plan Recommendation Card -->
+      <div class="card">
+        <h3>Megaline — ML Plan Recommendation</h3>
+        <p>Machine learning model that recommends the most suitable phone plan (Smart or Ultra) for each customer.</p>
+      
+        <a href="https://github.com/dsabarosner/python_projects/tree/main/DS/ML_Megaline" 
+           target="_blank" 
+           class="btn-secondary">View Repository</a>
+      
+        <button class="btn-secondary open-modal" data-modal="modal-ml-megaline">View Summary</button>
+      </div>
+
+
     </div>
   </section>
 
@@ -370,6 +383,79 @@
       </ul>
     </div>
   </div>
+
+  <!-- ML Megaline Modal -->
+<div id="modal-ml-megaline" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h1>Megaline — Machine Learning Plan Recommendation</h1>
+    <p>
+      Development of a machine learning model capable of recommending the most suitable phone plan 
+      (Smart or Ultra) based on real customer usage behavior.
+    </p>
+
+    <h2>Project Overview</h2>
+    <p>
+      Megaline noticed that many customers still use legacy plans and want to transition them to more 
+      efficient options. The goal of this project was to create a predictive model that analyzes 
+      customer activity—minutes used, messages sent, and data consumption—and recommends the plan 
+      that best fits each customer profile.
+    </p>
+
+    <h2>Technologies & Tools</h2>
+    <p>Python (pandas, scikit-learn), Jupyter Notebook, VS Code</p>
+
+    <h2>What Was Done</h2>
+    <ul>
+      <li>Cleaned and prepared the dataset.</li>
+      <li>Split the data into training, validation, and test segments.</li>
+      <li>Trained several machine learning models:
+        <ul>
+          <li>Decision Tree</li>
+          <li>Random Forest</li>
+          <li>Logistic Regression</li>
+        </ul>
+      </li>
+      <li>Compared model performance using accuracy.</li>
+      <li>Selected the best model for deployment.</li>
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+      <li>
+        The best-performing model was <strong>Random Forest</strong>, achieving an 
+        <strong>accuracy of 81%</strong>.
+      </li>
+      <li>
+        This performance exceeds the <strong>75% target accuracy</strong> required by Megaline.
+      </li>
+      <li>
+        The model generalizes well and shows no signs of overfitting.
+      </li>
+      <li>
+        The predictions are reliable enough to be used for customer plan recommendations.
+      </li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <ul>
+      <li>
+        This machine learning model can support Megaline in migrating customers to the Smart or Ultra 
+        plan based on their real usage patterns.
+      </li>
+      <li>
+        It helps improve customer experience and optimize commercial strategy.
+      </li>
+      <li>
+        The project demonstrates the full workflow of implementing a supervised classification model: 
+        data preparation, model selection, tuning, and evaluation.
+      </li>
+    </ul>
+
+  </div>
+</div>
+
 
   <!-- Scripts -->
   <script src="assets/js/nodes.js"></script>
