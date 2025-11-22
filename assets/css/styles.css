@@ -222,43 +222,50 @@ body {
   display: none; 
   position: fixed; 
   z-index: 1000; 
-  left: 0;
-  top: 0;
+  left: 0; top: 0;
   width: 100%; 
   height: 100%;
-  background-color: rgba(0,0,0,0.8); 
-  overflow: auto; /* scroll externo si se pasa de pantalla */
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7); 
   padding: 20px;
   box-sizing: border-box;
-  animation: fadeIn 0.3s ease-in-out;
 }
 
 /* Modal content box */
 .modal-content {
-  background-color: #fff;
+  background-color: #fff;  /* fondo blanco */
+  color: #111;             /* texto oscuro */
   margin: 20px auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
-  width: 95%; /* casi full width */
-  max-width: 1400px; /* ancho máximo grande */
-  max-height: 95vh; /* altura máxima 95% de viewport */
-  overflow-y: auto; /* scroll interno si contenido muy largo */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 /* Ajuste de imágenes dentro del modal */
 .modal-content img {
   width: 100%;
   height: auto;
-  margin: 15px 0;
-  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Titulos dentro del modal */
+.modal-content h1,
+.modal-content h2,
+.modal-content h3 {
+  color: #111; /* títulos oscuros */
 }
 
 /* Close button */
 .modal .close {
-  color: #aaa;
+  color: #333;  /* más oscuro para que se vea */
   float: right;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -267,17 +274,13 @@ body {
   color: #000;
 }
 
-/* Animación de fadeIn */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-/* Botón volver dentro del modal */
-.modal .back-button {
+/* Botón "Back to Projects" */
+.modal-content .back-button {
   display: inline-block;
   margin-bottom: 20px;
+  color: #fff;
+  background-color: #111;
+  padding: 8px 15px;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
-  color: #333;
 }
