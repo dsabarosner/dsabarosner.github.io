@@ -44,103 +44,37 @@
     <h2>Projects</h2>
     <div class="projects-grid">
 
-      <!-- Megaline -->
-     <div id="modal-megaline" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <a href="#" class="back-button">&larr; Back to Projects</a>
-    <h1>Megaline</h1>
-    <p>Classification model to recommend the best phone plan for users based on their monthly behavior.</p>
+      <!-- Megaline Card -->
+      <div class="card">
+        <h3>Megaline</h3>
+        <p>Classification model to recommend the best phone plan.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
+        <button class="btn-secondary open-modal" data-modal="modal-megaline">View Summary</button>
+      </div>
 
-    <h2>Project Overview</h2>
-    <p><strong>Problem:</strong> Users often choose the wrong phone plan.</p>
-    <p><strong>Solution:</strong> Classification model to recommend Smart or Ultra plan.</p>
-    <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
+      <!-- Rusty Bargain Card -->
+      <div class="card">
+        <h3>Rusty Bargain</h3>
+        <p>Used car price prediction using multiple models.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
+        <button class="btn-secondary open-modal" data-modal="modal-rusty">View Summary</button>
+      </div>
 
-    <h2>Conclusion</h2>
-    <ul>
-      <li>Successfully predicted suitable plans for customers.</li>
-      <li>Helps improve customer satisfaction and retention.</li>
-    </ul>
-  </div>
-</div>
+      <!-- Default Predictor Card -->
+      <div class="card">
+        <h3>Default Predictor</h3>
+        <p>Financial risk model to predict default probability.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
+        <button class="btn-secondary open-modal" data-modal="modal-default">View Summary</button>
+      </div>
 
-
-      <!-- Rusty Bargain -->
-      <div id="modal-rusty" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <a href="#" class="back-button">&larr; Back to Projects</a>
-    <h1>Rusty Bargain</h1>
-    <p>Used car price prediction using multiple regression models.</p>
-
-    <h2>Project Overview</h2>
-    <p><strong>Problem:</strong> Determining market value for used cars.</p>
-    <p><strong>Solution:</strong> Regression models including Linear, Decision Tree, Random Forest, LightGBM, XGBoost, CatBoost.</p>
-    <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn, LightGBM, XGBoost, CatBoost</p>
-
-    <h2>Conclusion</h2>
-    <ul>
-      <li>Evaluated multiple models for accuracy, speed, and training time.</li>
-      <li>Identified optimal model for reliable price prediction.</li>
-    </ul>
-  </div>
-</div>
-
-
-      <!-- Default Predictor -->
-      <div id="modal-default" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <a href="#" class="back-button">&larr; Back to Projects</a>
-    <h1>Default Predictor</h1>
-    <p>Financial risk model to predict probability of default for clients.</p>
-
-    <h2>Project Overview</h2>
-    <p><strong>Problem:</strong> Predicting customer default risk.</p>
-    <p><strong>Solution:</strong> Built a predictive model using historical financial data.</p>
-    <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
-
-    <h2>Conclusion</h2>
-    <ul>
-      <li>Model helps identify high-risk clients early.</li>
-      <li>Supports informed financial decision-making.</li>
-    </ul>
-  </div>
-</div>
-
-
-      <!-- Instacart -->
-      <div id="modal-instacart" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <a href="#" class="back-button">&larr; Back to Projects</a>
-    <h1>Instacart Data Wrangling</h1>
-    <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
-
-    <h2>Project Overview</h2>
-    <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
-    <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
-    <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
-
-    <h2>Exploratory Data Analysis</h2>
-    <ul class="img-list">
-      <li>Orders per hour of the day <br><img src="assets/imgs/instacart1.png" alt="Orders per hour"></li>
-      <li>Orders by day of the week <br><img src="assets/imgs/instacart2.png" alt="Orders by day"></li>
-      <li>Time until next order <br><img src="assets/imgs/instacart3.png" alt="Time until next order"></li>
-      <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <br><img src="assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
-      <li>Distribution of items per order <br><img src="assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
-    </ul>
-
-    <h2>Conclusion</h2>
-    <ul>
-      <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
-      <li>Banana is the most frequently ordered and repeated product.</li>
-      <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
-      <li>Data preprocessing ensured high-quality data for subsequent analysis.</li>
-    </ul>
-  </div>
-</div>
+      <!-- Instacart Card -->
+      <div class="card">
+        <h3>Instacart Data Wrangling</h3>
+        <p>Data preprocessing and exploratory analysis of Instacart user orders.</p>
+        <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
+        <button class="btn-secondary open-modal" data-modal="modal-instacart">View Summary</button>
+      </div>
 
     </div>
   </section>
@@ -158,19 +92,22 @@
   <!-- Footer -->
   <footer class="footer">© 2025 Daniela Saba Rosner</footer>
 
-  <!-- Modal Structures -->
+  <!-- Modals -->
 
   <!-- Megaline Modal -->
   <div id="modal-megaline" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Megaline</h2>
+      <a href="#" class="back-button">&larr; Back to Projects</a>
+      <h1>Megaline</h1>
       <p>Classification model to recommend the best phone plan for users based on their monthly behavior.</p>
-      <h3>Project Overview</h3>
+
+      <h2>Project Overview</h2>
       <p><strong>Problem:</strong> Users often choose the wrong phone plan.</p>
       <p><strong>Solution:</strong> Classification model to recommend Smart or Ultra plan.</p>
       <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
-      <h3>Conclusion</h3>
+
+      <h2>Conclusion</h2>
       <ul>
         <li>Successfully predicted suitable plans for customers.</li>
         <li>Helps improve customer satisfaction and retention.</li>
@@ -182,13 +119,16 @@
   <div id="modal-rusty" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Rusty Bargain</h2>
+      <a href="#" class="back-button">&larr; Back to Projects</a>
+      <h1>Rusty Bargain</h1>
       <p>Used car price prediction using multiple regression models.</p>
-      <h3>Project Overview</h3>
+
+      <h2>Project Overview</h2>
       <p><strong>Problem:</strong> Determining market value for used cars.</p>
       <p><strong>Solution:</strong> Regression models including Linear, Decision Tree, Random Forest, LightGBM, XGBoost, CatBoost.</p>
       <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn, LightGBM, XGBoost, CatBoost</p>
-      <h3>Conclusion</h3>
+
+      <h2>Conclusion</h2>
       <ul>
         <li>Evaluated multiple models for accuracy, speed, and training time.</li>
         <li>Identified optimal model for reliable price prediction.</li>
@@ -200,13 +140,16 @@
   <div id="modal-default" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Default Predictor</h2>
+      <a href="#" class="back-button">&larr; Back to Projects</a>
+      <h1>Default Predictor</h1>
       <p>Financial risk model to predict probability of default for clients.</p>
-      <h3>Project Overview</h3>
+
+      <h2>Project Overview</h2>
       <p><strong>Problem:</strong> Predicting customer default risk.</p>
       <p><strong>Solution:</strong> Built a predictive model using historical financial data.</p>
       <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
-      <h3>Conclusion</h3>
+
+      <h2>Conclusion</h2>
       <ul>
         <li>Model helps identify high-risk clients early.</li>
         <li>Supports informed financial decision-making.</li>
@@ -215,39 +158,36 @@
   </div>
 
   <!-- Instacart Modal -->
-<div id="modal-instacart" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    
-    <a href="#" class="back-button">&larr; Back to Projects</a>
+  <div id="modal-instacart" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <a href="#" class="back-button">&larr; Back to Projects</a>
+      <h1>Instacart Data Wrangling</h1>
+      <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
 
-    <h1>Instacart Data Wrangling</h1>
-    <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
+      <h2>Project Overview</h2>
+      <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
+      <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
+      <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
 
-    <h2>Project Overview</h2>
-    <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
-    <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
-    <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
+      <h2>Exploratory Data Analysis</h2>
+      <ul class="img-list">
+        <li>Orders per hour of the day <br><img src="assets/imgs/instacart1.png" alt="Orders per hour"></li>
+        <li>Orders by day of the week <br><img src="assets/imgs/instacart2.png" alt="Orders by day"></li>
+        <li>Time until next order <br><img src="assets/imgs/instacart3.png" alt="Time until next order"></li>
+        <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <br><img src="assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
+        <li>Distribution of items per order <br><img src="assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
+      </ul>
 
-    <h2>Exploratory Data Analysis</h2>
-    <ul class="img-list">
-      <li>Orders per hour of the day <br><img src="assets/imgs/instacart1.png" alt="Orders per hour"></li>
-      <li>Orders by day of the week <br><img src="assets/imgs/instacart2.png" alt="Orders by day"></li>
-      <li>Time until next order <br><img src="assets/imgs/instacart3.png" alt="Time until next order"></li>
-      <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <br><img src="assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
-      <li>Distribution of items per order <br><img src="assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
-    </ul>
-
-    <h2>Conclusion</h2>
-    <ul>
-      <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
-      <li>Banana is the most frequently ordered and repeated product.</li>
-      <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
-      <li>Data preprocessing ensured high-quality data for subsequent analysis.</li>
-    </ul>
+      <h2>Conclusion</h2>
+      <ul>
+        <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
+        <li>Banana is the most frequently ordered and repeated product.</li>
+        <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
+        <li>Data preprocessing ensured high-quality data for subsequent analysis.</li>
+      </ul>
+    </div>
   </div>
-</div>
-
 
   <!-- Scripts -->
   <script src="assets/js/nodes.js"></script>
@@ -276,6 +216,5 @@
       });
     });
   </script>
-
 </body>
 </html>
