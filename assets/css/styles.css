@@ -222,39 +222,43 @@ body {
   display: none; 
   position: fixed; 
   z-index: 1000; 
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   width: 100%; 
   height: 100%;
-  overflow: auto; /* permite scroll si el contenido es muy largo */
-  background-color: rgba(0,0,0,0.7); 
+  background-color: rgba(0,0,0,0.8); 
+  overflow: auto; /* scroll externo si se pasa de pantalla */
   padding: 20px;
   box-sizing: border-box;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 /* Modal content box */
 .modal-content {
   background-color: #fff;
   margin: 20px auto;
-  padding: 30px;
+  padding: 40px;
   border-radius: 12px;
-  width: 90%; /* más ancho */
-  max-width: 1200px; /* lo hace bastante grande */
-  max-height: 90vh; /* altura máxima 90% de la ventana */
-  overflow-y: auto; /* scroll interno si el contenido supera altura */
+  width: 95%; /* casi full width */
+  max-width: 1400px; /* ancho máximo grande */
+  max-height: 95vh; /* altura máxima 95% de viewport */
+  overflow-y: auto; /* scroll interno si contenido muy largo */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 /* Ajuste de imágenes dentro del modal */
 .modal-content img {
-  width: 100%; /* ocupa todo el ancho disponible */
+  width: 100%;
   height: auto;
-  margin: 10px 0;
+  margin: 15px 0;
+  border-radius: 8px;
 }
 
 /* Close button */
 .modal .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -263,3 +267,17 @@ body {
   color: #000;
 }
 
+/* Animación de fadeIn */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Botón volver dentro del modal */
+.modal .back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
