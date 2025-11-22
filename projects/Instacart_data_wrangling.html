@@ -8,28 +8,38 @@
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-inner">
-            <div class="photo">
-                <img src="../assets/imgs/profile-photo.jpg" alt="Daniela Saba Rosner">
-            </div>
-            <div class="hero-text">
-                <div class="roles">Business Intelligence · Data Analysis · Data Science</div>
-                <div class="name">Daniela Saba Rosner</div>
-            </div>
-        </div>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">DSR</div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
+    <!-- Hero Section with nodes background -->
+    <section id="hero" class="hero">
+        <canvas id="nodes-bg"></canvas>
+        <div class="hero-content">
+            <h1>Instacart Data Wrangling</h1>
+            <h2>Business Intelligence • Data Analysis • Data Science</h2>
+        </div>
+    </section>
+
+    <!-- Main Project Content -->
     <main class="container project-container">
 
         <a href="../index.html" class="back-button">← Back to Home</a>
 
+        <!-- Project Header -->
         <div class="project-header">
             <h1>Instacart Data Wrangling</h1>
             <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
         </div>
 
+        <!-- Project Overview -->
         <section>
             <h2>Project Overview</h2>
             <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
@@ -37,6 +47,7 @@
             <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
         </section>
 
+        <!-- Exploratory Data Analysis -->
         <section>
             <h2>Exploratory Data Analysis</h2>
             <ul class="img-list">
@@ -48,6 +59,7 @@
             </ul>
         </section>
 
+        <!-- Conclusion -->
         <section>
             <h2>Conclusion</h2>
             <ul>
@@ -60,9 +72,11 @@
 
     </main>
 
-    <footer>
-       © 2025 Daniela Saba Rosner
-    </footer>
+    <!-- Footer -->
+    <footer class="footer">© 2025 Daniela Saba Rosner</footer>
+
+    <!-- Nodes background script -->
+    <script src="../assets/js/nodes.js"></script>
 
 </body>
 </html>
