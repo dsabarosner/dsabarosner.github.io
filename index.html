@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <!-- Header -->
   <header class="navbar">
     <div class="logo">DSR</div>
     <nav>
@@ -17,6 +18,7 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <canvas id="nodes-bg"></canvas>
     <div class="hero-content">
@@ -26,6 +28,7 @@
     </div>
   </section>
 
+  <!-- About Me Section -->
   <section id="about" class="about">
     <div class="about-wrapper">
       <img src="assets/imgs/profile.png" alt="Profile" class="profile-img" />
@@ -36,41 +39,47 @@
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
 
+      <!-- Megaline -->
       <div class="card">
         <h3>Megaline</h3>
         <p>Classification model to recommend the best phone plan.</p>
         <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
-        <a href="projects/megaline.html" class="btn-secondary">View Summary</a>
+        <button class="btn-secondary open-modal" data-modal="modal-megaline">View Summary</button>
       </div>
 
+      <!-- Rusty Bargain -->
       <div class="card">
         <h3>Rusty Bargain</h3>
         <p>Used car price prediction using multiple models.</p>
         <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
-        <a href="projects/rusty-bargain.html" class="btn-secondary">View Summary</a>
+        <button class="btn-secondary open-modal" data-modal="modal-rusty">View Summary</button>
       </div>
 
+      <!-- Default Predictor -->
       <div class="card">
         <h3>Default Predictor</h3>
         <p>Financial risk model to predict default probability.</p>
         <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
-        <a href="projects/default-predictor.html" class="btn-secondary">View Summary</a>
+        <button class="btn-secondary open-modal" data-modal="modal-default">View Summary</button>
       </div>
 
+      <!-- Instacart -->
       <div class="card">
         <h3>Instacart Data Wrangling</h3>
         <p>Data preprocessing and exploratory analysis of Instacart user orders.</p>
         <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
-        <a href="projects/Instacart_data_wrangling.html" class="btn-secondary">View Summary</a>
+        <button class="btn-secondary open-modal" data-modal="modal-instacart">View Summary</button>
       </div>
 
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Connect with me on my professional networks:</p>
@@ -80,8 +89,111 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">© 2025 Daniela Saba Rosner</footer>
 
+  <!-- Modal Structures -->
+
+  <!-- Megaline Modal -->
+  <div id="modal-megaline" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Megaline</h2>
+      <p>Classification model to recommend the best phone plan for users based on their monthly behavior.</p>
+      <h3>Project Overview</h3>
+      <p><strong>Problem:</strong> Users often choose the wrong phone plan.</p>
+      <p><strong>Solution:</strong> Classification model to recommend Smart or Ultra plan.</p>
+      <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
+      <h3>Conclusion</h3>
+      <ul>
+        <li>Successfully predicted suitable plans for customers.</li>
+        <li>Helps improve customer satisfaction and retention.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Rusty Bargain Modal -->
+  <div id="modal-rusty" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Rusty Bargain</h2>
+      <p>Used car price prediction using multiple regression models.</p>
+      <h3>Project Overview</h3>
+      <p><strong>Problem:</strong> Determining market value for used cars.</p>
+      <p><strong>Solution:</strong> Regression models including Linear, Decision Tree, Random Forest, LightGBM, XGBoost, CatBoost.</p>
+      <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn, LightGBM, XGBoost, CatBoost</p>
+      <h3>Conclusion</h3>
+      <ul>
+        <li>Evaluated multiple models for accuracy, speed, and training time.</li>
+        <li>Identified optimal model for reliable price prediction.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Default Predictor Modal -->
+  <div id="modal-default" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Default Predictor</h2>
+      <p>Financial risk model to predict probability of default for clients.</p>
+      <h3>Project Overview</h3>
+      <p><strong>Problem:</strong> Predicting customer default risk.</p>
+      <p><strong>Solution:</strong> Built a predictive model using historical financial data.</p>
+      <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
+      <h3>Conclusion</h3>
+      <ul>
+        <li>Model helps identify high-risk clients early.</li>
+        <li>Supports informed financial decision-making.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Instacart Modal -->
+  <div id="modal-instacart" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Instacart Data Wrangling</h2>
+      <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
+      <h3>Project Overview</h3>
+      <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
+      <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
+      <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
+      <h3>Conclusion</h3>
+      <ul>
+        <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
+        <li>Banana is the most frequently ordered and repeated product.</li>
+        <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="assets/js/nodes.js"></script>
+  <script>
+    // Modal functionality
+    const openButtons = document.querySelectorAll('.open-modal');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.modal .close');
+
+    openButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = document.getElementById(btn.dataset.modal);
+        modal.style.display = 'block';
+      });
+    });
+
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.modal').style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', (e) => {
+      modals.forEach(modal => {
+        if(e.target === modal) modal.style.display = 'none';
+      });
+    });
+  </script>
+
 </body>
 </html>
