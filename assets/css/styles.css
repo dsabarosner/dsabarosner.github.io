@@ -284,3 +284,32 @@ body {
   border-radius: 5px;
   text-decoration: none;
 }
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #ffffff15;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+.results-table th {
+    background: #ffffff25;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.results-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ffffff22;
+}
+
+.results-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+
