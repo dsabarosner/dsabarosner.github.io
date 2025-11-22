@@ -149,23 +149,39 @@
   </div>
 
   <!-- Instacart Modal -->
-  <div id="modal-instacart" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Instacart Data Wrangling</h2>
-      <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
-      <h3>Project Overview</h3>
-      <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
-      <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
-      <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
-      <h3>Conclusion</h3>
-      <ul>
-        <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
-        <li>Banana is the most frequently ordered and repeated product.</li>
-        <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
-      </ul>
-    </div>
+<div id="modal-instacart" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <a href="#" class="back-button">&larr; Back to Projects</a>
+
+    <h1>Instacart Data Wrangling</h1>
+    <p>Data preprocessing and exploratory analysis of Instacart user orders to identify patterns and trends.</p>
+
+    <h2>Project Overview</h2>
+    <p><strong>Problem:</strong> Understanding customer purchase behavior and product selection trends.</p>
+    <p><strong>Solution:</strong> Data preprocessing including type correction, handling missing values, and removing duplicates.</p>
+    <p><strong>Technologies & Tools:</strong> Python (pandas), Jupyter Notebook, VS Code</p>
+
+    <h2>Exploratory Data Analysis</h2>
+    <ul class="img-list">
+      <li>Orders per hour of the day <br><img src="assets/imgs/instacart1.png" alt="Orders per hour"></li>
+      <li>Orders by day of the week <br><img src="assets/imgs/instacart2.png" alt="Orders by day"></li>
+      <li>Time until next order <br><img src="assets/imgs/instacart3.png" alt="Time until next order"></li>
+      <li>Difference between Wednesday and Saturday for 'order_hour_of_day' <br><img src="assets/imgs/instacart4.png" alt="Difference between Wednesday and Saturday"></li>
+      <li>Distribution of items per order <br><img src="assets/imgs/instacart5.png" alt="Distribution of items per order"></li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <ul>
+      <li>Identified peak ordering times (9 a.m.) and most active shopping days (Sunday & Monday).</li>
+      <li>Banana is the most frequently ordered and repeated product.</li>
+      <li>Average product reorder rate is above 50%, useful for segmentation and promotions.</li>
+      <li>Data preprocessing ensured high-quality data for subsequent analysis.</li>
+    </ul>
   </div>
+</div>
+
 
   <!-- Scripts -->
   <script src="assets/js/nodes.js"></script>
