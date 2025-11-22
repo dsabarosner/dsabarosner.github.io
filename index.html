@@ -108,6 +108,14 @@
         <button class="btn-secondary open-modal" data-modal="modal-ml-megaline">View Summary</button>
       </div>
 
+      <!-- BetaBank Card -->
+    <div class="card">
+        <h3>BetaBank — Churn Prediction</h3>
+        <p>Machine Learning project to predict which customers are likely to leave the bank, using strategies to handle imbalanced classes.</p>
+        <a href="https://github.com/dsabarosner/python_projects/tree/main/DS/Aprendizaje_supervisado" target="_blank" class="btn-secondary">View Repository</a>
+        <button class="btn-secondary open-modal" data-modal="betabank-modal">View Summary</button>
+    </div>
+
 
     </div>
   </section>
@@ -453,6 +461,69 @@
       </li>
     </ul>
 
+  </div>
+</div>
+
+  <!-- BetaBank Modal -->
+<div id="betabank-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('betabank-modal')">&times;</span>
+
+    <h2>Predicción de Churn — BetaBank</h2>
+
+    <p>
+      Este proyecto busca predecir si un cliente abandonará Beta Bank.
+      Debido al fuerte desbalanceo de clases, se compararon múltiples estrategias:
+      <strong>class_weight</strong>, <strong>SMOTE</strong> y <strong>undersampling</strong>.
+    </p>
+
+    <h3>Resultados de modelos</h3>
+
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>F1 (Test)</th>
+                <th>AUC-ROC (Test)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Base (LR)</td>
+                <td>0.284</td>
+                <td>0.77</td>
+            </tr>
+            <tr>
+                <td>LR (class_weight='balanced')</td>
+                <td>0.498</td>
+                <td>0.777</td>
+            </tr>
+            <tr>
+                <td>Random Forest + SMOTE</td>
+                <td><strong>0.620</strong></td>
+                <td>0.859</td>
+            </tr>
+            <tr>
+                <td>XGBoost + UnderSampling</td>
+                <td>0.592</td>
+                <td><strong>0.869</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Visualizaciones</h3>
+
+    <div class="modal-images">
+        <img src="assets/img/betabank1.png" alt="Matriz de confusión">
+        <img src="assets/img/betabank2.png" alt="Curva ROC">
+    </div>
+
+    <p>
+      El modelo recomendado es <strong>Random Forest + SMOTE</strong>, con el mejor balance entre
+      F1 y AUC-ROC. Es adecuado para monitoreo mensual de métricas para evitar degradación del modelo.
+    </p>
+
+    <button class="back-btn" onclick="closeModal('betabank-modal')">Volver</button>
   </div>
 </div>
 
