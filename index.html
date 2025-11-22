@@ -47,7 +47,7 @@
       <!-- Megaline Card -->
       <div class="card">
         <h3>Megaline</h3>
-        <p>Classification model to recommend the best phone plan.</p>
+        <p>applying descriptive and inferential statistics to explore patterns and distributions in customer behavior.</p>
         <a href="https://github.com/dsabarosner" target="_blank" class="btn-secondary">View Repository</a>
         <button class="btn-secondary open-modal" data-modal="modal-megaline">View Summary</button>
       </div>
@@ -94,25 +94,72 @@
 
   <!-- Modals -->
 
-  <!-- Megaline Modal -->
-  <div id="modal-megaline" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h1>Megaline</h1>
-      <p>Classification model to recommend the best phone plan for users based on their monthly behavior.</p>
+ <!-- Megaline Modal -->
+<div id="modal-megaline" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
 
-      <h2>Project Overview</h2>
-      <p><strong>Problem:</strong> Users often choose the wrong phone plan.</p>
-      <p><strong>Solution:</strong> Classification model to recommend Smart or Ultra plan.</p>
-      <p><strong>Technologies & Tools:</strong> Python, Pandas, Scikit-learn</p>
+    <h1>Megaline — Descriptive & Inferential Statistics</h1>
+    <p>Statistical analysis of telecom customer behavior to identify revenue differences between two prepaid mobile plans.</p>
 
-      <h2>Conclusion</h2>
-      <ul>
-        <li>Successfully predicted suitable plans for customers.</li>
-        <li>Helps improve customer satisfaction and retention.</li>
-      </ul>
-    </div>
+    <h2>Project Overview</h2>
+    <p>
+      This project applies <strong>descriptive and inferential statistics</strong> to explore customer usage patterns and revenue generation.
+      The objective is to understand which prepaid plan—<em>Surf</em> or <em>Ultimate</em>—brings higher earnings for Megaline.
+    </p>
+
+    <p>
+      <strong>Problem:</strong> The commercial department needs to determine which plan generates higher revenue to optimize advertising budget allocation.
+    </p>
+
+    <p>
+      <strong>Technologies & Tools:</strong> Python (pandas, numpy, scipy, matplotlib, seaborn, math), Jupyter Notebook, VS Code
+    </p>
+
+    <h2>Exploratory Data Analysis</h2>
+    <ul class="img-list">
+      <li>Average call duration by plan and month<br>
+        <img src="assets/imgs/megaline1.png" alt="Average call duration">
+      </li>
+      <li>Monthly minutes per plan<br>
+        <img src="assets/imgs/megaline2.png" alt="Monthly minutes">
+      </li>
+      <li>Average messages per plan<br>
+        <img src="assets/imgs/megaline3.png" alt="Messages per plan">
+      </li>
+      <li>MB consumed per plan<br>
+        <img src="assets/imgs/megaline4.png" alt="MB usage">
+      </li>
+      <li>Average monthly revenue per plan<br>
+        <img src="assets/imgs/megaline5.png" alt="Revenue per plan">
+      </li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <ul>
+      <li>
+        No significant differences were found in call duration, messages sent, or monthly data usage between the two plans.
+      </li>
+      <li>
+        A t-test revealed a significant difference in average revenue: the <strong>Ultimate</strong> plan generates more income on average.
+      </li>
+      <li>
+        Surf plan shows higher revenue volatility due to users generating extra charges through exceeding usage.
+      </li>
+      <li>
+        Ultimate’s large minute allowance may be excessive, as most users consume less than what is offered.
+      </li>
+      <li>
+        Data consumption in Surf increases in the last months of the year, suggesting opportunities for data-focused commercial strategies.
+      </li>
+      <li>
+        Megaline should target atypical high-consumption users, who generate the highest revenue, either within existing plans or with a redesigned offer.
+      </li>
+    </ul>
+
   </div>
+</div>
+
 
   <!-- Rusty Bargain Modal -->
   <div id="modal-rusty" class="modal">
