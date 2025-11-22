@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megaline Analysis — Daniela Saba Rosner</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">DSR</div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with nodes background -->
+    <section id="hero" class="hero">
+        <canvas id="nodes-bg"></canvas>
+        <div class="hero-content">
+            <h1>Megaline Project</h1>
+            <h2>Business Intelligence • Data Analysis • Data Science</h2>
+        </div>
+    </section>
+
+    <!-- Main Project Content -->
+    <main class="container project-container">
+
+        <a href="../index.html" class="back-button">← Back to Home</a>
+
+        <!-- Project Header -->
+        <div class="project-header">
+            <h1>Megaline — Descriptive & Inferential Statistics</h1>
+            <p>Statistical analysis of telecom customer behavior to identify differences between mobile plan revenues.</p>
+        </div>
+
+        <!-- Project Overview -->
+        <section>
+            <h2>Project Overview</h2>
+            <p>
+                This project focuses on applying <strong>descriptive and inferential statistics</strong> to explore patterns and distributions in customer behavior. 
+                The goal was to practice Python for real-world data analysis tasks.
+            </p>
+
+            <p>
+                <strong>Problem:</strong> Megaline, a telecom operator, offers two prepaid plans: <em>Surf</em> and <em>Ultimate</em>.  
+                The commercial department wants to understand which plan generates more revenue to optimize their advertising budget.
+            </p>
+
+            <p>
+                <strong>Technologies & Tools:</strong><br>
+                Python (pandas, numpy, scipy, matplotlib, seaborn, math)<br>
+                Jupyter Notebook<br>
+                VS Code
+            </p>
+        </section>
+
+        <!-- Exploratory Data Analysis -->
+        <section>
+            <h2>Exploratory Data Analysis</h2>
+            <ul class="img-list">
+                <li>Average call duration by plan and month<br>
+                    <img src="../assets/imgs/megaline1.png" alt="Average call duration">
+                </li>
+                <li>Monthly minutes per plan<br>
+                    <img src="../assets/imgs/megaline2.png" alt="Monthly minutes">
+                </li>
+                <li>Average messages per plan<br>
+                    <img src="../assets/imgs/megaline3.png" alt="Messages per plan">
+                </li>
+                <li>MB consumed per plan<br>
+                    <img src="../assets/imgs/megaline4.png" alt="MB usage">
+                </li>
+                <li>Average monthly revenue per plan<br>
+                    <img src="../assets/imgs/megaline5.png" alt="Revenue per plan">
+                </li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <h2>Conclusion</h2>
+            <ul>
+                <li>
+                    Although no significant differences were found in average call duration, number of messages, or monthly data consumption between plans, 
+                    a t-test showed a significant difference in mean revenue.
+                </li>
+                <li>
+                    On average, the <strong>Ultimate plan generates more revenue</strong>, but Surf shows higher volatility due to some users generating extra charges.
+                </li>
+                <li>
+                    It is recommended to review the minute allowance for Ultimate, as most users consume less than the offered amount. Users with atypical behavior might generate extra revenue if limits were adjusted.
+                </li>
+                <li>
+                    Surf’s increasing data consumption pattern in the last months of the year suggests an opportunity for adjusting commercial strategy.
+                </li>
+                <li>
+                    Overall, Megaline should focus its marketing strategy on atypical high-consumption users who generate the most revenue, either within existing plans or through a redesigned offer.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">© 2025 Daniela Saba Rosner</footer>
+
+    <!-- Nodes background script -->
+    <script src="../assets/js/nodes.js"></script>
+
+</body>
+</html>
