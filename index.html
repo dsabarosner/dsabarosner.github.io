@@ -80,6 +80,13 @@
         <button class="btn-secondary open-modal" data-modal="modal-ice">View Summary</button>
       </div>
 
+      <!-- Zuber Card -->
+      <div class="card">
+        <h3>Zuber</h3>
+        <p>Analysis of ride-sharing trip patterns to understand passenger behavior and weather impact.</p>
+        <a href="https://github.com/dsabarosner/python_projects/tree/main/DS/Proyecto_compilado_8" target="_blank" class="btn-secondary">View Repository</a>
+        <button class="btn-secondary open-modal" data-modal="modal-zuber">View Summary</button>
+      </div>
 
       <!-- Instacart Card -->
       <div class="card">
@@ -276,6 +283,57 @@
       <li>Strategies must focus on platforms with strong sales in recent years, since formerly dominant ones are declining rapidly.</li>
       <li>Regional trends differ significantly — especially between Japan and Western markets (EU/NA).</li>
       <li>ESRB ratings have limited impact on sales overall but remain relevant for broad-audience titles.</li>
+    </ul>
+
+  </div>
+</div>
+
+  <!-- Zuber Modal -->
+<div id="modal-zuber" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h1>Zuber — Exploratory Analysis of Ride-Sharing Trips</h1>
+    <p>
+      Analysis of rideshare data for <strong>Zuber</strong>, a new company launching in Chicago.
+      The goal is to uncover passenger preferences and understand how external factors—particularly 
+      weather—affect trip behavior and duration.
+    </p>
+
+    <h2>Project Overview</h2>
+    <p><strong>Technologies & Tools:</strong> Python (pandas, numpy, scipy, matplotlib, seaborn, math), Jupyter Notebook, VS Code</p>
+
+    <h2>Exploratory Data Analysis</h2>
+    <ul class="img-list">
+      <li>
+        Number of trips by company<br>
+        <img src="assets/imgs/zuber1.png" alt="Trips by company">
+      </li>
+      <li>
+        Average trips by drop-off neighborhood (November)<br>
+        <img src="assets/imgs/zuber2.png" alt="Trips by neighborhood">
+      </li>
+      <li>
+        Trip duration based on weather conditions<br>
+        <img src="assets/imgs/zuber3.png" alt="Trip duration vs weather">
+      </li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <ul>
+      <li>
+        A hypothesis test showed a statistically significant difference in mean trip duration:
+        <strong>Saturday rainy days affect rides from Loop to O'Hare</strong>, increasing trip duration.
+      </li>
+      <li>
+        Trip duration has noticeable outliers under both good and bad weather conditions.
+      </li>
+      <li>
+        The interquartile range is similar for both weather types, but the <strong>median duration is higher on rainy days</strong>.
+      </li>
+      <li>
+        Good-weather days display more extreme outliers, suggesting variability in traffic and demand patterns.
+      </li>
     </ul>
 
   </div>
