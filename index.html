@@ -606,30 +606,44 @@
     <h2>Project Overview</h2>
     <p><strong>Objective:</strong> Develop a model to predict the final gold recovery rate based on mineral processing steps.</p>
     <p><strong>Business Value:</strong> Improved prediction accuracy enables better control of gold extraction efficiency.</p>
-    <p><strong>Tech Stack:</strong> Python (pandas, scikit-learn), Jupyter Notebook.</p>
+    <p><strong>Technologies & Tools:</strong> Python (pandas, scikit-learn), Jupyter Notebook.</p>
 
-    <h2>Process Diagram</h2>
-    <img src="assets/imgs/zyfra1.png" alt="Ore processing diagram">
+    <h2>Methodology</h2>
+    <ul>
+      <li>Data cleaning and preprocessing: handled outliers and missing values.</li>
+      <li>Exploratory analysis of metal concentrations across stages.</li>
+      <li>Feature engineering to select the most predictive variables.</li>
+      <li>Trained multiple machine learning models to predict final recovery efficiency.</li>
+      <li>Validated model performance using cross-validation and error metrics.</li>
+    </ul>
 
     <h2>Exploratory Data Analysis</h2>
     <ul class="img-list">
-      <li>Purification recovery distribution <br><img src="assets/imgs/zyfra2.png"></li>
-      <li>Final recovery distribution <br><img src="assets/imgs/zyfra3.png"></li>
-      <li>Gold concentration in purification stages <br><img src="assets/imgs/zyfra4.png"></li>
-      <li>Silver concentration in purification stages <br><img src="assets/imgs/zyfra5.png"></li>
-      <li>Lead concentration in purification stages <br><img src="assets/imgs/zyfra6.png"></li>
-      <li>Total concentration distribution in final stage <br><img src="assets/imgs/zyfra7.png"></li>
+      <li>Purification recovery distribution <br><img src="assets/imgs/zyfra2.png" alt="Purification recovery"></li>
+      <li>Final recovery distribution <br><img src="assets/imgs/zyfra3.png" alt="Final recovery"></li>
+      <li>Gold concentration in purification stages <br><img src="assets/imgs/zyfra4.png" alt="Gold concentration"></li>
+      <li>Silver concentration in purification stages <br><img src="assets/imgs/zyfra5.png" alt="Silver concentration"></li>
+      <li>Lead concentration in purification stages <br><img src="assets/imgs/zyfra6.png" alt="Lead concentration"></li>
+      <li>Total concentration distribution in final stage <br><img src="assets/imgs/zyfra7.png" alt="Total concentration"></li>
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+      <li>The purification stage shows the highest variability in metal concentration.</li>
+      <li>Gold concentration has the strongest predictive importance for final recovery.</li>
+      <li>The model achieves accurate predictions, supporting operational decisions.</li>
     </ul>
 
     <h2>Conclusion</h2>
     <ul>
-      <li>The purification stage shows the highest variability in metal concentration.</li>
-      <li>Gold has the strongest predictive importance for final recovery.</li>
-      <li>Data preprocessing (outliers, missing values) was crucial to model performance.</li>
-      <li>The final model provides reliable predictions for operational optimization.</li>
+      <li>Data preprocessing (handling outliers and missing values) was crucial for model performance.</li>
+      <li>The final machine learning model provides reliable predictions for operational optimization.</li>
+      <li>Insights can guide process improvements and increase overall gold recovery efficiency.</li>
     </ul>
+
   </div>
 </div>
+
 
 
 
