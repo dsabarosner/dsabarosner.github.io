@@ -116,6 +116,14 @@
         <button class="btn-secondary open-modal" data-modal="betabank-modal">View Summary</button>
     </div>
 
+       <!-- OilyGiant Card -->
+    <div class="card">
+      <h3>OilyGiant Oil Well Analysis</h3>
+      <p>Prediction of oil reserves and profit estimation using linear regression and bootstrapping.</p>
+      <a href="https://github.com/dsabarosner/python_projects/blob/main/DS/Aprendizaje_automatico/Proyecto11.ipynb" target="_blank" class="btn-secondary">View Repository</a>
+      <button class="btn-secondary open-modal" data-modal="modal-oilygiant">View Summary</button>
+    </div>
+
 
     </div>
   </section>
@@ -523,6 +531,52 @@
       between F1 and AUC-ROC. Regular monitoring of metrics is suggested to detect potential model drift.
     </p>
 
+  </div>
+</div>
+
+  <div id="modal-oilygiant" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <h1>OilyGiant Oil Well Analysis</h1>
+    <p>
+      This project aims to identify the best region for developing 200 new oil wells using linear regression to predict oil reserves and bootstrapping to evaluate profit and risk.
+    </p>
+
+    <h2>Project Overview</h2>
+    <p><strong>Problem:</strong> Determine which of the three regions will generate the highest profit with minimal financial risk when opening 200 new oil wells.</p>
+    <p><strong>Solution:</strong> Train a linear regression model for each region, select wells with the highest predicted reserves, estimate profits, and evaluate risks using bootstrapping.</p>
+    <p><strong>Technologies & Tools:</strong> Python, pandas, NumPy, scikit-learn, Linear Regression, Bootstrapping</p>
+
+    <h2>Methodology</h2>
+    <ul>
+      <li>Load and analyze datasets from three oil regions.</li>
+      <li>Train linear regression models to predict well reserve volume.</li>
+      <li>Select the top 200 wells with the highest predicted reserves in each region.</li>
+      <li>Calculate expected profit using:
+        <br>• Income: $4500 per thousand barrels
+        <br>• Investment: $100M for 200 wells
+      </li>
+      <li>Use bootstrapping (1000 samples of 500 wells) to estimate:
+        <br>• Average profit
+        <br>• 95% confidence interval
+        <br>• Probability of loss (risk)
+      </li>
+    </ul>
+
+    <h2>Key Results</h2>
+    <ul>
+      <li><strong>Region 0:</strong> Moderate profit but high risk of loss (~6%).</li>
+      <li><strong>Region 1:</strong> Highest average profit (~$4.4M) and lowest risk (~1%).</li>
+      <li><strong>Region 2:</strong> Good predicted reserves but highest risk (~9%).</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      <strong>Region 1</strong> is the optimal choice for new oil well development.  
+      It delivers the highest average profit, the most stable confidence interval, and the lowest probability of financial loss.  
+      This conclusion differs from the initial selection based solely on predicted reserves, demonstrating the importance of risk analysis.
+    </p>
   </div>
 </div>
 
