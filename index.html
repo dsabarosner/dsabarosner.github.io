@@ -124,6 +124,18 @@
       <button class="btn-secondary open-modal" data-modal="modal-oilygiant">View Summary</button>
     </div>
 
+      <!-- Zyfra Project Card -->
+    <div class="project-card">
+      <img src="assets/imgs/zyfra1.png" alt="Zyfra Project" class="project-image">
+    
+      <div class="project-info">
+        <h3>Zyfra — Gold Recovery Prediction</h3>
+        <p>Machine Learning model to predict final gold recovery efficiency based on ore processing stages.</p>
+        <button class="open-modal" data-modal="zyfra-modal">View Project</button>
+      </div>
+    </div>
+
+
 
     </div>
   </section>
@@ -533,7 +545,7 @@
 
   </div>
 </div>
-
+ <!-- OilyGiant Project Modal -->
   <div id="modal-oilygiant" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -577,6 +589,65 @@
       It delivers the highest average profit, the most stable confidence interval, and the lowest probability of financial loss.  
       This conclusion differs from the initial selection based solely on predicted reserves, demonstrating the importance of risk analysis.
     </p>
+  </div>
+</div>
+
+  <!-- Zyfra Project Modal -->
+<div id="zyfra-modal" class="modal">
+  <div class="modal-content">
+
+    <span class="close-modal" data-modal="zyfra-modal">&times;</span>
+
+    <h2>Zyfra — Gold Recovery Prediction</h2>
+
+    <p>
+      The goal of this project is to build a Machine Learning model capable of predicting 
+      the final efficiency of gold recovery in the Beta Bank mineral processing pipeline. 
+      The process includes flotation, cleaning, purification, and final concentrate generation.
+    </p>
+
+    <h3>📌 Process Flow</h3>
+    <img src="assets/imgs/zyfra1.png" class="modal-img" alt="Process Diagram">
+
+    <h3>📊 Exploratory Data Analysis</h3>
+
+    <p><strong>Distribution of recovery at the purification stage:</strong></p>
+    <img src="assets/imgs/zyfra2.png" class="modal-img" alt="Purification Recovery">
+
+    <p><strong>Distribution of final recovery:</strong></p>
+    <img src="assets/imgs/zyfra3.png" class="modal-img" alt="Final Recovery">
+
+    <p><strong>Gold concentration per purification step:</strong></p>
+    <img src="assets/imgs/zyfra4.png" class="modal-img" alt="Gold Concentration">
+
+    <p><strong>Silver concentration per purification step:</strong></p>
+    <img src="assets/imgs/zyfra5.png" class="modal-img" alt="Silver Concentration">
+
+    <p><strong>Lead concentration per purification step:</strong></p>
+    <img src="assets/imgs/zyfra6.png" class="modal-img" alt="Lead Concentration">
+
+    <p><strong>Distribution of total metal concentration in the final stage:</strong></p>
+    <img src="assets/imgs/zyfra7.png" class="modal-img" alt="Final Stage Concentration">
+
+    <h3>🤖 Modeling</h3>
+    <p>
+      Multiple models were evaluated to predict final gold recovery, including:<br>
+      • Linear Regression<br>
+      • Random Forest<br>
+      • Gradient Boosting<br>
+      • LightGBM<br>
+      • XGBoost<br>
+      • CatBoost<br><br>
+
+      Models were compared using the **sMAPE metric**, which is recommended for production in the mining industry since it penalizes large deviations symmetrically.
+    </p>
+
+    <h3>🏁 Final Results</h3>
+    <p>
+      CatBoost delivered the best performance with the lowest sMAPE.  
+      The final model demonstrated strong predictive power and stability when tested on real production-like data.
+    </p>
+
   </div>
 </div>
 
